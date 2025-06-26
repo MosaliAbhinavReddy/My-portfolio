@@ -27,22 +27,22 @@ export default function AboutPage() {
   <h2 className="text-2xl font-bold text-white mb-6">Experience</h2>
 
   {[
-    {
-      title: "Research Intern – DRDO, India",
-      date: "Jan 2022 – Jun 2022",
-      details: "Worked on ASIC design and functional verification for control modules using SystemVerilog and UVM. Developed RTL for FSM-based logic, validated APB protocol handshakes, and assisted in FPGA bring-up using Vivado."
+  {
+    title: "Graduate Design Verification Intern – Syracuse University",
+    date: "Jun 2025 – Present",
+    details: "Leading instruction-level UVM verification of RISC-V cores, including ALU and branching logic. Developing constrained-random tests, assertions, and coverage models to drive coverage closure and functional completeness."
     },
-    {
-      title: "Digital Design Intern – Fabsilica Technologies",
-      date: "Jul 2022 - Jun 2023",
-      details: "Built modular UVM environments to verify SoC IPs. Focused on register interface validation, protocol assertions, and automated regression analysis. Supported waveform debug and test planning across subsystems."
-    },
-    {
-      title: "Graduate Research & Projects – Syracuse University",
-      date: "Aug 2023 – May 2025",
-      details: "Leading instruction-level UVM verification of RISC-V cores, including ALU and branching logic. Developing constrained-random tests, assertions, and coverage models to drive coverage closure and functional completeness."
-    }
-  ].map((item, index) => {
+  {
+    title: "Design Verification Engineer – Fabsilica Technologies",
+    date: "Jul 2022 - Jun 2023",
+    details: "Built modular UVM environments to verify SoC IPs. Focused on register interface validation, protocol assertions, and automated regression analysis. Supported waveform debug and test planning across subsystems."
+  },
+  {
+    title: "Design Verification Intern – DRDO, India",
+    date: "Jan 2022 – Jun 2022",
+    details: "Worked on ASIC design and functional verification for control modules using SystemVerilog and UVM. Developed RTL for FSM-based logic, validated APB protocol handshakes, and assisted in FPGA bring-up using Vivado."
+  }]
+    .map((item, index) => {
     const [open, setOpen] = useState(false);
 
     return (
